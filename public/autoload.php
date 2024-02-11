@@ -12,7 +12,7 @@ define("UPLOADS",ROOT_PATH. 'public'.DS.'uploads'.DS);
 
 $modulos = [ROOT_PATH,APP,CORE,VIEWS,CONTROLLERS,MODELS,CONFIG];
 set_include_path(get_include_path(). PATH_SEPARATOR.implode(PATH_SEPARATOR, $modulos));
-spl_autoload_register('spl_autoload', false);
+spl_autoload_register('spl_autoload',true);
 
 new App();  // Inicia la aplicación
 
